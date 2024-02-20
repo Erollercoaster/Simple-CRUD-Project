@@ -8,6 +8,5 @@ Rails.application.routes.draw do
   resources :workouts
 
   root "workouts#index"
-  get '/workouts', to: 'workouts#index'
   # Defines the root path route ("/")
 end
