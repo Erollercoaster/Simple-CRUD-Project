@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :workouts
 
+  root "workouts#index"
   # Defines the root path route ("/")
   # root "posts#index"
 end
