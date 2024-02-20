@@ -9,5 +9,4 @@ Rails.application.routes.draw do
 
   root "workouts#index"
   # Defines the root path route ("/")
-  # root "posts#index"
 end
