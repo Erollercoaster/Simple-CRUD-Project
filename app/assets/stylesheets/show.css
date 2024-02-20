@@ -1,0 +1,40 @@
+.show-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    text-align: center;
+    margin-top: 10rem;
+  }
+  
+  .show-container h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .show-container .button {
+    font-size: 14px;
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .show-container .button:hover {
+    background-color: #8B0000;
+  }
+  
+  .show-container .actions {
+    text-align: center;
+  }
+  
+  .show-container .centered {
+    display: inline-block;
+  }

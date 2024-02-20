@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a.button-red {
+    font-size: 14px;
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: white;
+}
+
+a.button-red:hover {
+    background-color: #8B0000; /* Change background color on hover */
+  }
+
+.actions {
+    text-align: center; /* Align content in the center horizontally */
+  }
+  
+  .centered {
+    display: inline-block; /* Display the content as inline-block */
+  }
+  
+  .button-green {
+    background-color: #00FF00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .button-green:hover {
+    background-color: #008000; 
+  }
+  
+
+.form-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  }
+
+  .field-inline {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .field-inline .field {
+    width: 48%;
+  }
+
+  .field {
+    margin-bottom: 20px;
+  }
+  
+  .field input[type="text"], .field input[type="number"], .field input[type="date"] {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    padding: 0.8em;
+    font-size: .875rem;
+    outline: none;
+    margin-top: 5px;
+
+}
+  #error_explanation {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  #error_explanation h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #error_explanation ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #error_explanation li {
+    margin-bottom: 5px;
+  }

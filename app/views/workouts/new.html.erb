@@ -1,0 +1,8 @@
+<h1>New Workout</h1>
+
+<%= render 'form', workout: @workout %>
+
+
+<% content_for :additional_css do %>
+  <%= stylesheet_link_tag 'new_form', media: 'all' %>
+<% end %>

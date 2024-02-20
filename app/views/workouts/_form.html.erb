@@ -1,0 +1,49 @@
+<div class="form-container">
+  <%= form_with(model: workout, local: true, data: { turbo: false }) do |form| %>
+    <% if workout.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(workout.errors.count, "error") %> prohibited this workout from being saved:</h2>
+
+        <ul>
+          <% workout.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :exercise_name %>
+      <%= form.text_field :exercise_name %>
+    </div>
+
+    <div class="field-inline">
+      <div class="field">
+        <%= form.label :sets %>
+        <%= form.number_field :sets %>
+      </div>
+
+      <div class="field">
+        <%= form.label :reps %>
+        <%= form.number_field :reps %>
+      </div>
+    </div>
+
+    <div class="field">
+      <%= form.label :weight %>
+      <%= form.number_field :weight %>
+    </div>
+
+    <div class="field">
+      <%= form.label :date %>
+      <%= form.date_field :date %>
+    </div>
+
+    <div class="actions">
+      <div class="centered">
+        <%= form.submit class: 'button-green' %>
+        <%= link_to 'Back', workouts_path, class: 'button-red' %>
+      </div>
+    </div>
+  <% end %>
+</div>

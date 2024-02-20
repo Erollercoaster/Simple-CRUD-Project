@@ -1,0 +1,14 @@
+<div class="show-container">
+<p><strong>Exercise Name:</strong> <%= @workout.exercise_name %></p>
+<p><strong>Sets:</strong> <%= @workout.sets %></p>
+<p><strong>Reps:</strong> <%= @workout.reps %></p>
+<p><strong>Weight:</strong> <%= @workout.weight %></p>
+<p><strong>Date:</strong> <%= @workout.date %></p>
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> |
+<%= link_to 'Back', workouts_path %>
+</div>
+
+<% content_for :additional_css do %>
+  <%= stylesheet_link_tag 'show', media: 'all' %>
+<% end %>
